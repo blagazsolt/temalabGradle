@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("org.sonarqube") version "3.4.0.2513"
 }
 
 group = "org.example"
@@ -16,4 +17,12 @@ dependencies {
 
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
+}
+
+sonarqube {
+    properties {
+        property ("sonar.projectKey", "blagazsolt_temalabGradle")
+        property ("sonar.organization", "blagazsolt")
+        property ("sonar.host.url", "https://sonarcloud.io")
+    }
 }
