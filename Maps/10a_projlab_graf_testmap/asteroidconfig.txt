@@ -1,0 +1,72 @@
+    A1, A2, A3, A4, A5, A6, A7, A8, A9, A10  
+A1,   , x ,   , x ,   ,   ,   ,   ,   , x 
+A2, x ,   , x ,   ,   ,   ,   ,   , x ,   
+A3,   , x ,   ,   ,   ,   ,   , x ,   ,   
+A4, x ,   ,   ,   , x ,   ,   ,   ,   ,   
+A5,   ,   ,   , x ,   ,   ,   , x ,   ,   
+A6,   ,   ,   ,   ,   ,   , x ,   ,   , x 
+A7,   ,   ,   ,   ,   , x ,   ,   , x ,   
+A8,   ,   , x ,   , x ,   ,   ,   ,   ,   
+A9,   , x ,   ,   ,   ,   , x ,   ,   , x 
+A10, x ,   ,   ,   ,   , x ,   ,   , x ,  
+
+A1              	
+characters,U1,S1,S3
+layer,0
+inventory,UR1
+toSun,true
+portals,G1
+A2
+characters,R1,S4,
+layer,0
+inventory,IC1
+toSun,false
+portals,G3
+A3
+characters,U2,R2
+layer,5
+inventory,IR1
+toSun,true
+portals,
+A4              	
+characters,S2
+layer,2
+inventory,
+toSun,false
+portals,G5
+A5
+characters,
+layer,0
+inventory,UR2
+toSun,true
+portals,G9
+A6
+characters,
+layer,1
+inventory,IC2
+toSun,false
+portals,G4
+A7              	
+characters,
+layer,3
+inventory,CO2
+toSun,false
+portals,G2
+A8
+characters,
+layer,5
+inventory,IR2
+toSun,true
+portals,
+A9
+characters,S5
+layer,0
+inventory,
+toSun,false
+portals,G10
+A10
+characters,
+layer,0
+inventory,CO1
+toSun,false
+portals,

@@ -1,0 +1,23 @@
+    A1, A2, A3    	 
+A1,   , x ,                     
+A2, x ,   , x 
+A3,   , x ,   
+
+A1              	
+characters,U1,S2
+layer,0
+inventory,UR1
+toSun,false
+portals,G1
+A2
+characters,R1,S1
+layer,5
+inventory,IC1
+toSun,false
+portals,G3
+A3
+characters,S3
+layer,0
+inventory,
+toSun,false
+portals,G2

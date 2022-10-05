@@ -1,0 +1,16 @@
+   A1 ,A2
+A1,   , x
+A2, x ,   
+
+A1
+characters,S1
+layer,5
+inventory,
+toSun,false
+portals,
+A2
+characters,S2
+layer,5
+inventory,
+toSun,false
+portals,

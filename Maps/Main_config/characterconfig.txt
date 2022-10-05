@@ -1,0 +1,11 @@
+S1,
+inventory,CO3
+portals,G4
+S2,
+inventory,CO1,CO2,IC2,IC3,UR2,UR3,UR4,IR1,IR2,IR3
+portals,
+S3,
+inventory,IR4,IC4,UR5
+portals,G5,G6
+U1,
+inventory,

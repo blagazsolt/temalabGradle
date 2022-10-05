@@ -1,0 +1,30 @@
+    A1, A2, A3, A4   	 
+A1,   , x ,   ,   
+A2, x ,   , x ,   
+A3,   , x ,   , x
+A4,   ,   , x ,   
+
+A1
+characters,S1,U1,R1
+layer,0
+inventory,UR1
+toSun,true
+portals,
+A2
+characters,
+layer,5
+inventory,UR2
+toSun,true
+portals,
+A3
+characters,
+layer,0
+inventory,IC1
+toSun,true
+portals,
+A4
+characters,
+layer,5
+inventory,IC2
+toSun,true
+portals,
