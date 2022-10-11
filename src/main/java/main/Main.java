@@ -29,6 +29,9 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) throws IOException {
+        teszt t = new teszt();
+        t.teszt();
+
 
         MenuView menuView = new MenuView();
 
