@@ -1,4 +1,4 @@
-name: Sonar
+name: Sonargit p
 on:
   push:
     branches:
