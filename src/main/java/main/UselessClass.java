@@ -46,6 +46,9 @@ public class UselessClass extends Object {
         }
 
     }
+    public void justPrintApple(){
+        System.out.println("Apple");
+    }
 
 }
 
