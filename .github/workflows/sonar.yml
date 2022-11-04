@@ -2,7 +2,7 @@ name: Sonargit p
 on:
   push:
     branches:
-      - master
+      - "*"
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
