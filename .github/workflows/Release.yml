@@ -23,9 +23,6 @@ jobs:
       id: properties
       with:
         arguments: version
-    - name: Getting version from Build.Gradle.kts
     - run:   echo ::set-env name=version::$(grep "version" build.gradle.kts)
       shell: bash
-      
-    - name: Check if I can still use the outputs from the Grep Build.gradle.kts file
     - run: echo steps.env.outputs.version
