@@ -23,7 +23,7 @@ jobs:
       id: properties
       with:
         arguments: properties
-    - run: echo "version=$(grep "version" build.gradle.kts | tail -n 1)" >> $GITHUB_OUTPUT
+    - run: echo "version=$(grep "version" build.gradle.kts | tail -n 1 | cut -d ' ' -f 3 )" >> $GITHUB_OUTPUT
       id: value
       shell: bash
     - run: echo "${{steps.value.outputs.version}}" 
