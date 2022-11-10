@@ -16,7 +16,8 @@ jobs:
       with:
         fetch-depth: 0
       if: github.event_name == 'schedule'
-    - name: Create tag
-      id: create_tag
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+    - name: Run build with Gradle Wrapper
       run: ./gradlew properties
             
