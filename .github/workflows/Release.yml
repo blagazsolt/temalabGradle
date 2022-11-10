@@ -9,7 +9,7 @@ jobs:
   gradle:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -22,4 +22,10 @@ jobs:
       uses: gradle/gradle-build-action@v2
       id: properties
       with:
-        arguments: properties
+        arguments: version
+    - name: Getting version from Build.Gradle.kts
+    - run:   echo ::set-env name=version::$(grep "version" build.gradle.kts)
+      shell: bash
+      
+    - name: Check if I can still use the outputs from the Grep Build.gradle.kts file
+    - run: echo steps.env.outputs.version
