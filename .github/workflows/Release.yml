@@ -1,1 +1,22 @@
+name: Create release file
 
+on:
+  workflow_dispatch:
+  
+
+jobs:
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    outputs:
+      release_id: ${{ steps.create_release.outputs.id }}
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+      if: github.event_name == 'schedule'
+    - name: Create tag
+      id: create_tag
+      run: gradlew properties
+            
