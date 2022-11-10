@@ -1,6 +1,10 @@
 plugins {
     id("java")
     id("org.sonarqube") version "3.4.0.2513"
+    id("application")
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+
+
 }
 
 group = "org.example"
@@ -25,4 +29,11 @@ sonarqube {
         property ("sonar.organization", "blagazsolt")
         property ("sonar.host.url", "https://sonarcloud.io")
     }
+}
+application{
+    mainClassName="main.Main"
+}
+allprojects {
+    group = "hu.bme.mit.inf.theta"
+    version = "3.2.1"
 }
