@@ -23,7 +23,7 @@ jobs:
       id: properties
       with:
         arguments: properties
-    - run: echo "SELECTED_COLOR= $(grep "version" build.gradle.kts | tail -n 1)" >> $GITHUB_OUTPUT
+    - run: echo "version=$(grep "version" build.gradle.kts | tail -n 1)" >> $GITHUB_OUTPUT
       id: value
       shell: bash
     - run: echo "${{steps.value.outputs.version}}" 
