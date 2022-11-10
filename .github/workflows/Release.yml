@@ -23,6 +23,6 @@ jobs:
       id: properties
       with:
         arguments: properties
-    - run:   echo ::set-env name=version::$(grep "version" build.gradle.kts)
+    - run:   echo ::set-output name=version::$(grep "version" build.gradle.kts | tail -n 1)
       shell: bash
-    - run: echo "${{steps.counter.outputs.version}}"
+    - run: echo "${{steps.properties.outputs.version}}"
