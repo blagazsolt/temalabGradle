@@ -96,7 +96,7 @@ public class MenuView extends JFrame implements ActionListener {
      * ezt valósítjuk meg ebben a metódusban
      */
     private void loadList() {
-        File mainDirectory = new File(System.getProperty("user.dir") + "\\Maps\\Main_config");
+        File mainDirectory = new File(System.getProperty("user.dir") + "\\Maps");
         File[] mapsFolder = mainDirectory.listFiles();
         for (File f : mapsFolder) {
             dataList.addElement(f.getName());
