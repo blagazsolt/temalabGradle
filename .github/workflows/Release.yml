@@ -22,7 +22,7 @@ jobs:
       uses: gradle/gradle-build-action@v2
       id: properties
       with:
-        arguments: version
+        arguments: properties
     - run:   echo ::set-env name=version::$(grep "version" build.gradle.kts)
       shell: bash
     - run: echo steps.env.outputs.version
