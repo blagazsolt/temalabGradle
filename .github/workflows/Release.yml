@@ -18,5 +18,5 @@ jobs:
       if: github.event_name == 'schedule'
     - name: Create tag
       id: create_tag
-      run: gradlew properties
+      run: ./gradlew properties
             
