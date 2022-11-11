@@ -17,12 +17,7 @@ jobs:
       with:
         distribution: temurin
         java-version: 11
-    
-    - name: Setup and execute Gradle 'properties' task
-      uses: gradle/gradle-build-action@v2
-      id: properties
-      with:
-        arguments: properties
+        
     - run: echo "version=$(grep "version" build.gradle.kts | tail -n 1 | cut -d "=" -f2  )" >> $GITHUB_OUTPUT
       id: value
       shell: bash
