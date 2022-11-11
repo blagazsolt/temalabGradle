@@ -22,6 +22,10 @@ jobs:
       with:
         arguments: build
     - run: echo "${{steps.build.outputs.build}}"
+    - uses: actions/upload-artifact@v3
+      with: 
+        name: ProjlabWithGradle
+        path: build/libs/*-all.jar
 
   publish:
      name: Publish Release
@@ -36,5 +40,11 @@ jobs:
        id: value
        shell: bash
      - run: echo "${{steps.value.outputs.version}}" 
-     - run: ls build/libs/
-   
+     - uses: actions/download-artifact@v3
+       with: 
+        name: ProjlabWithGradle
+        path: jar/
+     - name: Display structure of downloaded files
+       run: ls -R
+       working-directory: jar/
+    
