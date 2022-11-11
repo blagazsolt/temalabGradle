@@ -28,8 +28,8 @@ jobs:
      needs: gradle
      runs-on: ubuntu-latest
        
-     steps:
-       
+     steps:  
+     - uses: actions/checkout@v3
      - name: Creating version number
      - run: echo "version=$(grep "version" build.gradle.kts | tail -n 1 | cut -d "=" -f2  )" >> $GITHUB_OUTPUT
        id: value
