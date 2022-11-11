@@ -28,4 +28,4 @@ jobs:
       id: build
       with:
         arguments: build
-    - run: echo "${{steps.build.outputs.jar}}"
+    - run: echo "${{steps.build.outputs.build}}"
