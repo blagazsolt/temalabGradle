@@ -22,3 +22,10 @@ jobs:
       id: value
       shell: bash
     - run: echo "${{steps.value.outputs.version}}" 
+    
+    - name: Setup and execute Gradle 'build' task
+      uses: gradle/gradle-build-action@v2
+      id: build
+      with:
+        arguments: build
+    - run: echo "${{steps.build.outputs}}"
