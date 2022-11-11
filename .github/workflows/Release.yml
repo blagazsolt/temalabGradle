@@ -50,4 +50,4 @@ jobs:
           body: "Auto-generated release"
           name: ${{steps.value.outputs.version}}
           tag_name: ${{steps.value.outputs.version}}
-          append_body: false
+         
