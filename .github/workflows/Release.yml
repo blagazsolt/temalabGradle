@@ -36,5 +36,5 @@ jobs:
        id: value
        shell: bash
      - run: echo "${{steps.value.outputs.version}}" 
-
+     - run: ls build/libs/
    
