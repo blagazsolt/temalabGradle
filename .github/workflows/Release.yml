@@ -42,12 +42,12 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: jar/
-      - run: for i in jar/*; do echo $i | cut -d'-' -f1 | awk ' { print $1".jar" } '; done
+      - run: for i in jar/*; do mv $i $(echo $i | cut -d'-' -f1 | awk ' { print $1".jar" } '); done
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: jar/*.jar
           body: "Auto-generated release"
-          name: steps.value.outputs.version
-          tag_name: steps.value.outputs.version
+          name: ${{steps.value.outputs.version}}
+          tag_name: ${{steps.value.outputs.version}}
           append_body: false
